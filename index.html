@@ -28,7 +28,7 @@
 <body>
 
     <!-- Loading Page -->
-    <section>
+    <section id="loading-section">
         <div class="loading-page" id="loading-page">
             <div class="logo">
                 <img src="assets/img/hero-hover.png" alt="Logo Jimmy Efendi">
@@ -46,9 +46,9 @@
         
     <!-- Home Section -->
     <section id="home">
-        <div class="glow" style="top: -10%; left: 90%; width: 100px; height: 100px;"></div>
-        <div class="glow" style="top: 30%; left: 65%; width: 150px; height: 150px;"></div>
-        <div class="glow" style="top: 80%; left: 85%; width: 80px; height: 80px;"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
         <div class="header">
             <div class="logo">
                 <span class="first-name">Jimmy</span> <span class="last-name">Efendi</span>
@@ -59,6 +59,8 @@
                     <i class="fas fa-circle"></i>
                     <div class="available-for-work">
                         <div class="available-text">
+                            <span>Available for work</span>
+                            <span>Available for work</span>
                             <span>Available for work</span>
                             <span>Available for work</span>
                         </div>
@@ -199,40 +201,75 @@
             <div class="carousel-container">
                 <div class="slider">
                     <div class="owl-carousel">
+                        
+                        <!-- Slider Card 1 -->
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <iframe allowfullscreen id="video1" src="https://www.youtube.com/embed/FE8fjR5sSgQ"></iframe>
+                            <div class="video-thumbnail youtube-video" data-id="FE8fjR5sSgQ">
+                                <img src="https://img.youtube.com/vi/FE8fjR5sSgQ/hqdefault.jpg" alt="Video Thumbnail">
+                                <div class="play-button">
+                                    <svg width="68" height="48" viewBox="0 0 68 48" version="1.1">
+                                        <path d="M66.52 7.06c-.76-2.84-2.99-5.08-5.82-5.82C56.09 0 34 0 34 0S11.91 0 7.3 1.24c-2.83.74-5.06 2.98-5.82 5.82C0 11.68 0 24 0 24s0 12.32 1.48 16.94c.76 2.84 2.99 5.08 5.82 5.82C11.91 48 34 48 34 48s22.09 0 26.7-1.24c2.83-.74 5.06-2.98 5.82-5.82C68 36.32 68 24 68 24s0-12.32-1.48-16.94zM27.32 34.84V13.16L45.5 24 27.32 34.84z" fill="#FF0000"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <h5>SPK Electre</h5>
                             <p>This is the first card.</p>
                         </div>
+                        
+                        <!-- Slider Card 2 -->
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <iframe allowfullscreen id="video2" src="https://www.youtube.com/embed/FE8fjR5sSgQ"></iframe>
+                            <div class="video-thumbnail youtube-video" data-id="FE8fjR5sSgQ">
+                                <img src="https://img.youtube.com/vi/FE8fjR5sSgQ/hqdefault.jpg" alt="Video Thumbnail">
+                                <div class="play-button">
+                                    <svg width="68" height="48" viewBox="0 0 68 48" version="1.1">
+                                        <path d="M66.52 7.06c-.76-2.84-2.99-5.08-5.82-5.82C56.09 0 34 0 34 0S11.91 0 7.3 1.24c-2.83.74-5.06 2.98-5.82 5.82C0 11.68 0 24 0 24s0 12.32 1.48 16.94c.76 2.84 2.99 5.08 5.82 5.82C11.91 48 34 48 34 48s22.09 0 26.7-1.24c2.83-.74 5.06-2.98 5.82-5.82C68 36.32 68 24 68 24s0-12.32-1.48-16.94zM27.32 34.84V13.16L45.5 24 27.32 34.84z" fill="#FF0000"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <h5>SPK Electre</h5>
-                            <p>This is the first card.</p>
+                            <p>This is the second card.</p>
                         </div>
+
+                        <!-- Slider Card 3 -->
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <iframe allowfullscreen id="video3" src="https://www.youtube.com/embed/FE8fjR5sSgQ"></iframe>
+                            <div class="video-thumbnail youtube-video" data-id="FE8fjR5sSgQ">
+                                <img src="https://img.youtube.com/vi/FE8fjR5sSgQ/hqdefault.jpg" alt="Video Thumbnail">
+                                <div class="play-button">
+                                    <svg width="68" height="48" viewBox="0 0 68 48" version="1.1">
+                                        <path d="M66.52 7.06c-.76-2.84-2.99-5.08-5.82-5.82C56.09 0 34 0 34 0S11.91 0 7.3 1.24c-2.83.74-5.06 2.98-5.82 5.82C0 11.68 0 24 0 24s0 12.32 1.48 16.94c.76 2.84 2.99 5.08 5.82 5.82C11.91 48 34 48 34 48s22.09 0 26.7-1.24c2.83-.74 5.06-2.98 5.82-5.82C68 36.32 68 24 68 24s0-12.32-1.48-16.94zM27.32 34.84V13.16L45.5 24 27.32 34.84z" fill="#FF0000"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <h5>SPK Electre</h5>
-                            <p>This is the first card.</p>
+                            <p>This is the second card.</p>
                         </div>
+
+                        <!-- Slider Card 4 -->
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <iframe allowfullscreen id="video4" src="https://www.youtube.com/embed/FE8fjR5sSgQ"></iframe>
+                            <div class="video-thumbnail youtube-video" data-id="FE8fjR5sSgQ">
+                                <img src="https://img.youtube.com/vi/FE8fjR5sSgQ/hqdefault.jpg" alt="Video Thumbnail">
+                                <div class="play-button">
+                                    <svg width="68" height="48" viewBox="0 0 68 48" version="1.1">
+                                        <path d="M66.52 7.06c-.76-2.84-2.99-5.08-5.82-5.82C56.09 0 34 0 34 0S11.91 0 7.3 1.24c-2.83.74-5.06 2.98-5.82 5.82C0 11.68 0 24 0 24s0 12.32 1.48 16.94c.76 2.84 2.99 5.08 5.82 5.82C11.91 48 34 48 34 48s22.09 0 26.7-1.24c2.83-.74 5.06-2.98 5.82-5.82C68 36.32 68 24 68 24s0-12.32-1.48-16.94zM27.32 34.84V13.16L45.5 24 27.32 34.84z" fill="#FF0000"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <h5>SPK Electre</h5>
-                            <p>This is the first card.</p>
+                            <p>This is the second card.</p>
                         </div>
+
+                        <!-- Slider Card 5 -->
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <iframe allowfullscreen id="video5" src="https://www.youtube.com/embed/FE8fjR5sSgQ"></iframe>
+                            <div class="video-thumbnail youtube-video" data-id="FE8fjR5sSgQ">
+                                <img src="https://img.youtube.com/vi/FE8fjR5sSgQ/hqdefault.jpg" alt="Video Thumbnail">
+                                <div class="play-button">
+                                    <svg width="68" height="48" viewBox="0 0 68 48" version="1.1">
+                                        <path d="M66.52 7.06c-.76-2.84-2.99-5.08-5.82-5.82C56.09 0 34 0 34 0S11.91 0 7.3 1.24c-2.83.74-5.06 2.98-5.82 5.82C0 11.68 0 24 0 24s0 12.32 1.48 16.94c.76 2.84 2.99 5.08 5.82 5.82C11.91 48 34 48 34 48s22.09 0 26.7-1.24c2.83-.74 5.06-2.98 5.82-5.82C68 36.32 68 24 68 24s0-12.32-1.48-16.94zM27.32 34.84V13.16L45.5 24 27.32 34.84z" fill="#FF0000"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <h5>SPK Electre</h5>
-                            <p>This is the first card.</p>
+                            <p>This is the second card.</p>
                         </div>
                     </div>
                 </div>
