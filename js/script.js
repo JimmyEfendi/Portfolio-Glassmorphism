@@ -259,3 +259,54 @@ function goToWhatsApp() {
     window.location.href = "https://wa.me/6285271654890";
 }
 //end whatsapp
+
+
+// Event listener untuk play button
+document.querySelectorAll('.play-button').forEach(button => {
+    button.addEventListener('click', function () {
+        const videoDiv = this.parentElement;
+        const videoId = videoDiv.getAttribute('data-id');
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('width', '300');  // Menetapkan lebar iframe
+        iframe.setAttribute('height', '169'); // Menetapkan tinggi iframe
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', '1');
+        videoDiv.innerHTML = ''; // Menghapus thumbnail dan play button
+        videoDiv.appendChild(iframe); // Menambahkan iframe
+    });
+});
+
+
+
+//Animasi Intersection Observer API (Skill)
+// Pilih semua elemen dengan class 'skill-logo'
+const skillLogos = document.querySelectorAll('.skill-logo');
+
+// Callback untuk Intersection Observer
+const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Tambahkan kelas 'show' saat elemen terlihat di viewport
+            entry.target.classList.add('show');
+        } else {
+            // Hilangkan kelas 'show' saat elemen keluar dari viewport
+            entry.target.classList.remove('show');
+        }
+    });
+};
+
+// Opsi untuk Intersection Observer
+const observerOptions = {
+    threshold: 0.1 // Elemen akan terlihat jika 10% dari ukurannya masuk ke viewport
+};
+
+// Buat instance Intersection Observer
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+// Amati setiap elemen 'skill-logo'
+skillLogos.forEach(skillLogo => {
+    observer.observe(skillLogo);
+});
+
+
