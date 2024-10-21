@@ -775,7 +775,7 @@
 }
 
 
-@media (max-width: 451px) {
+@media (max-width: 460px) {
     #job-position {
         font-size: 18px;
     }
@@ -784,6 +784,21 @@
         margin: 8px 0; /* Adjust margin for vertical spacing */
         font-size: 9px; /* Decrease font size */
         padding: 5px;
+    }
+
+    .edu-item .edu-content {
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .edu-item .edu-title {
+        font-size: 14px;
+    }
+
+    .edu-item .edu-description,
+    .edu-item .edu-location {
+        font-size: 12px;
     }
 }
 
@@ -820,9 +835,13 @@
 
 }
 
-@media (max-width: 421px) {
+@media (max-width: 425px) {
     #job-position {
         font-size: 17px;
+    }
+
+    .right-section p {
+        font-size: 10px;
     }
 
     .social-links a {
@@ -841,10 +860,4 @@
         padding: 5px;
     }
     /* End Navbar */
-}
-
-@media (max-width: 421px) {
-    .right-section p {
-        font-size: 10px;
-    }
 }
