@@ -358,7 +358,8 @@ body {
 }
 
 .whatsapp-button i {
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .whatsapp-button:hover {
