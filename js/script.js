@@ -133,7 +133,7 @@ function changeLanguage(lang) {
             document.getElementById('name').innerText = "Halo, \nSaya Jimmy Efendi";
             document.getElementById('about-me').innerText = "Saya dari Indonesia, saya memiliki pengalaman kerja lebih dari 2 tahun di bidang IT dan Design, mari bekerjasama untuk menciptakan desain aplikasi Android, IOS dan Web yang  kreatif, inovatif dan efisien untuk meningkatkan pengalaman pengguna. Selain itu saya juga seorang freelancer. Mari bekerja dengan saya.";
             document.getElementById('whatsapp-button').innerHTML = 'Senang mengobrol di Whatsapp <i class="fab fa-whatsapp"></i>';
-            availableText.innerHTML = '<span>Tersedia untuk bekerja</span>'.repeat(2);
+            availableText.innerHTML = '<span>Tersedia untuk bekerja</span>'.repeat(4);
             document.getElementById('language-toggle').innerHTML = 'ID <i class="fas fa-chevron-down"></i>';
             document.getElementById('dropdown-content').innerHTML = '<a href="#" onclick="changeLanguage(\'EN\')">EN</a>';
         } else {
@@ -141,13 +141,13 @@ function changeLanguage(lang) {
             document.getElementById('name').innerText = "Hello, \nI am Jimmy Efendi";
             document.getElementById('about-me').innerText = "I'am from Indonesia, i have more than 2 years of work experience in IT and Design. Let's work together to create creative, innovative and efficient Android, IOS and Web application designs to improve user experience. Besides that I am also a freelancer. Let's work with me.";
             document.getElementById('whatsapp-button').innerHTML = 'Happy to Chat on Whatsapp <i class="fab fa-whatsapp"></i>';
-            availableText.innerHTML = '<span>Available for work</span>'.repeat(2);
+            availableText.innerHTML = '<span>Available for work</span>'.repeat(4);
             document.getElementById('language-toggle').innerHTML = 'EN <i class="fas fa-chevron-down"></i>';
             document.getElementById('dropdown-content').innerHTML = '<a href="#" onclick="changeLanguage(\'ID\')">ID</a>';
         }
         
         availableText.classList.remove('reanimate'); 
-    }, 100);
+    }, 0);
 }
 
 const heroImage = document.getElementById('hero-image');
@@ -268,5 +268,3 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 skillLogos.forEach(skillLogo => {
     observer.observe(skillLogo);
 });
-
-
