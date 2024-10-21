@@ -103,8 +103,6 @@ body {
 }
 /* End Loading Bar */
 
-/**/
-
 
 /* Styling untuk elemen glow-1 */
 .glow {
@@ -224,26 +222,25 @@ body {
     mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); /* Gradient mask */
 }
 
-/* Gaya untuk teks berjalan */
 .available-for-work .available-text {
     width: 100%;
-    display: flex;       /* Mengatur teks agar berada dalam satu baris */
-    white-space: nowrap; /* Mencegah teks terbungkus ke baris baru */
-    animation: marquee 5s linear infinite; /* Animasi berjalan tanpa henti */
+    display: flex;       
+    white-space: nowrap; 
+    animation: marquee 5s linear infinite; 
 }
 
-/* Mengatur jarak antara teks */
+
 .available-for-work .available-text span {
     font-size: 12px;
-    margin-right: 10px;  /* Jarak antar teks */
-    color: white;      /* Warna teks */
+    margin-right: 10px; 
+    color: white;
 }
 @keyframes marquee {
     0% {
-        transform: translateX(0%); /* Mulai dari luar container di sebelah kiri */
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-430%); /* Bergerak keluar ke kiri container */
+        transform: translateX(-430%);
     }
 }
 
@@ -303,19 +300,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Sesuaikan tinggi */
-    opacity: 0; /* Mulai dengan gambar kedua tersembunyi */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .left-section:hover #hero-image {
-    opacity: 0; /* Saat hover, gambar pertama hilang */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .left-section:hover #hero-image-hover {
-    opacity: 1; /* Gambar kedua muncul saat hover */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 /* End Hero Section */
 
@@ -374,19 +371,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Sesuaikan tinggi */
-    opacity: 0; /* Mulai dengan gambar kedua tersembunyi */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .whatsapp-button:hover #hero-image {
-    opacity: 0; /* Saat hover, gambar pertama hilang */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .whatsapp-button:hover #hero-image-hover {
-    opacity: 1; /* Gambar kedua muncul saat hover */
-    transition: opacity 0.5s ease-in-out; /* Transisi halus */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 /* End Home Section */
 
@@ -667,16 +664,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    width: 90%; /* Sesuaikan ukuran card */
-    max-width: 320px; /* Maksimal lebar card */
+    width: 90%;
+    max-width: 320px;
     transform: scale(0.95);
     opacity: 0.8;
     transition: all 0.3s;
-    padding: 15px; /* Menambahkan padding */
+    padding: 15px;
 }
 
 .slider-card img, .slider-card iframe {
-    width: 100%; /* Gambar dan video full-width */
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -694,12 +691,12 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px !important; /* Ukuran arrow diperbesar */
+    font-size: 24px !important;
     z-index: 1;
-    color: white !important; /* Pastikan warna teks */
-    background-color: transparent; /* Warna background dengan prioritas */
-    border-radius: 50% !important; /* Membuat background berbentuk lingkaran */
-    padding: 15px !important; /* Ukuran lingkaran */
+    color: white !important;
+    background-color: transparent;
+    border-radius: 50% !important;
+    padding: 15px !important;
     width: 50px !important;
     height: 50px !important;
     display: flex;
@@ -709,11 +706,11 @@ body {
 }
 
 .owl-nav .owl-next{
-    right: -40px !important; /* Jarak dari tepi kanan */
+    right: -40px !important;
 }
 
 .owl-nav .owl-prev {
-    left: -40px !important; /* Jarak dari tepi kiri */
+    left: -40px !important;
 }
 
 .owl-nav .owl-next .fas, .owl-nav .owl-prev .fas {
@@ -930,13 +927,13 @@ body {
 }
 .skills {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Mengatur 5 kolom per baris */
-    column-gap: 40px; /* Jarak antar card secara horizontal (kolom) */
-    row-gap: 40px; /* Jarak antar card secara vertikal (baris) */
-    justify-content: center; /* Memusatkan grid secara horizontal */
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
     align-items: center;
-    margin: 50px auto; /* Margin atas dan bawah sebesar 50px, grid di tengah */
-    max-width: 50%; /* Membatasi lebar grid */
+    margin: 50px auto;
+    max-width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -1048,32 +1045,30 @@ body {
 .contact {
     width: 100%;
     overflow: hidden;
-    background-color: transparent; /* Warna latar belakang */
+    background-color: transparent;
 }
 
-/* Gaya untuk teks berjalan */
 .contact .talk {
     width: 100%;
-    display: flex;       /* Mengatur teks agar berada dalam satu baris */
-    white-space: nowrap; /* Mencegah teks terbungkus ke baris baru */
-    animation: marquee2 10s linear infinite; /* Animasi berjalan tanpa henti */
+    display: flex;
+    white-space: nowrap;
+    animation: marquee2 10s linear infinite;
 }
 
-/* Mengatur jarak antara teks */
 .contact .talk span {
     font-size: 200px;
     margin-top: 80px;
     margin-bottom: 50px;
-    margin-right: 20px;  /* Jarak antar teks */
-    color: white;      /* Warna teks */
+    margin-right: 20px;
+    color: white;
 }
 
 @keyframes marquee2 {
     0% {
-        transform: translateX(0%); /* Mulai dari luar container di sebelah kiri */
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-95%); /* Bergerak keluar ke kiri container */
+        transform: translateX(-95%);
     }
 }
 .contact .talk span:hover {
