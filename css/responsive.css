@@ -50,29 +50,29 @@
     }
 
     .slider-card {
-        width: 90%; /* Sesuaikan ukuran card */
-        max-width: 80%; /* Maksimal lebar card */
-        padding: 15px; /* Menambahkan padding */
+        width: 90%;
+        max-width: 80%;
+        padding: 15px;
     }
 
     .owl-nav .owl-next{
-        right: -20px !important; /* Jarak dari tepi kanan */
+        right: -20px !important; 
     }
     
     .owl-nav .owl-prev {
-        left: -20px !important; /* Jarak dari tepi kiri */
+        left: -20px !important; 
     }
 
     .my-name {
-        font-size: 23px; /* Ukuran nama yang lebih kecil */
+        font-size: 23px; 
     }
 
     .about-me {
-        font-size: 14px; /* Ukuran teks tentang saya yang lebih kecil */
+        font-size: 14px; 
     }
 
     .loc-date {
-        font-size: 12px; /* Ukuran teks lokasi dan tanggal yang lebih kecil */
+        font-size: 12px;
         margin-bottom: 50px;
     }
 
@@ -92,7 +92,7 @@
     }
 
     .skill-logo {
-        width: 120px; /* Sesuaikan ukuran card logo agar lebih kecil */
+        width: 120px; 
         height: 120px;
         padding: 5px;
     }
@@ -132,15 +132,13 @@
         height: 90px;
     }
     
-    /* Styling untuk elemen glow-2 */
     .glow-2 {
         top: 30%;
         left: 65%;
         width: 145px;
         height: 145px;
     }
-    
-    /* Styling untuk elemen glow-3 */
+
     .glow-3 {
         top: 80%;
         left: 75%;
@@ -169,16 +167,14 @@
         width: 85px;
         height: 85px;
     }
-    
-    /* Styling untuk elemen glow-2 */
+
     .glow-2 {
         top: 30%;
         left: 65%;
         width: 135px;
         height: 135px;
     }
-    
-    /* Styling untuk elemen glow-3 */
+
     .glow-3 {
         top: 80%;
         left: 75%;
@@ -195,19 +191,19 @@
     /* Navbar */
     .navbar {
         max-width: 100%;
-        padding: 10px; /* Adjust padding */
+        padding: 10px; 
     }
 
     .navbar a {
-        margin: 8px 0; /* Adjust margin for vertical spacing */
-        font-size: 16px; /* Decrease font size */
+        margin: 8px 0; 
+        font-size: 16px; 
         padding: 10px;
     }
     /* End Navbar */
 
     /* Experience */
     .experience h1 {
-        font-size: 28px; /* Adjust header size */
+        font-size: 28px;
     }
 
     .history {
@@ -216,7 +212,7 @@
     }
 
     .job img {
-        width: 100px; /* Further adjust image size */
+        width: 100px; 
         height: 100px;
         padding-left: 20px;
         padding-right: 20px;
@@ -226,7 +222,7 @@
         width: 100%;
     }
     .job .jobdesk h2 {
-        font-size: 18px; /* Further adjust heading size */
+        font-size: 18px; 
     }
 
     .jobdesk {
@@ -241,16 +237,16 @@
         margin-right: 120px;
     }
     .job .jobdesk p {
-        font-size: 12px; /* Further adjust paragraph size */
+        font-size: 12px; 
     }
 
     .window {
-        width: 150px; /* Further adjust window size */
+        width: 150px; 
         height: 150px;
     }
 
     .window .period {
-        font-size: 10px; /* Further adjust period size */
+        font-size: 10px;
     }
     /* End Experience */
 
@@ -262,44 +258,44 @@
         margin-right: 5%;
     }
     .education {
-        font-size: 24px; /* Ukuran font yang lebih kecil untuk mobile */
+        font-size: 24px; 
     }
 
     .education h1 {
-        font-size: 28px; /* Ukuran h1 yang lebih kecil */
+        font-size: 28px; 
     }
 
     .edu-header {
         margin-top: 50px;
-        font-size: 20px; /* Ukuran header yang lebih kecil */
-        margin-left: 15px; /* Menghapus margin kiri */
+        font-size: 20px;
+        margin-left: 15px;
     }
 
     .my-edu {
-        flex-direction: column; /* Ubah menjadi kolom untuk tampilan mobile */
-        padding: 20px; /* Tambahkan padding untuk mobile */
+        flex-direction: column; 
+        padding: 20px; 
     }
 
     .left-edu {
-        width: 100%; /* Ubah lebar menjadi 100% untuk tampilan mobile */
-        margin-right: 0; /* Hapus margin kanan */
-        margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak */
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 20px; 
     }
 
     .right-edu {
-        width: 100%; /* Ubah lebar menjadi 100% untuk tampilan mobile */
+        width: 100%;
     }
 
     .my-name {
-        font-size: 24px; /* Ukuran nama yang lebih kecil */
+        font-size: 24px;
     }
 
     .about-me {
-        font-size: 14px; /* Ukuran teks tentang saya yang lebih kecil */
+        font-size: 14px; 
     }
 
     .loc-date {
-        font-size: 12px; /* Ukuran teks lokasi dan tanggal yang lebih kecil */
+        font-size: 12px; 
         margin-bottom: 50px;
     }
 
@@ -317,13 +313,13 @@
     }
 
     .edu-item img {
-        width: 60px; /* Ukuran gambar lebih kecil untuk mobile */
-        height: 60px; /* Ubah tinggi gambar menjadi lebih kecil */
+        width: 60px;
+        height: 60px; 
         margin-bottom: 5px;
     }
 
     .edu-item .edu-years {
-        font-size: 9px; /* Ukuran tahun yang lebih kecil */
+        font-size: 9px; 
     }
 
     .edu-item .edu-content {
@@ -353,7 +349,7 @@
         max-width: 100%;
     }
     .skill-logo {
-        width: 100px; /* Sesuaikan ukuran card logo agar lebih kecil */
+        width: 100px; 
         height: 100px;
         padding: 5px;
     }
@@ -365,7 +361,7 @@
 
     /* Contact */
     .contact .talk span {
-        font-size: 150px; /* Ukuran font lebih kecil lagi untuk perangkat yang lebih kecil */
+        font-size: 150px; 
     }
     .social-links {
         max-width: 100%;
@@ -379,7 +375,7 @@
         margin-right: 5px;
     }
     .footer {
-        padding: 10px 0; /* Mengurangi padding footer */
+        padding: 10px 0; 
     }
     /* End Contact */
 }
@@ -390,23 +386,23 @@
     }
     /*Loading Page*/
     .loading-page .logo img {
-        width: 60px; /* Ukuran logo lebih kecil di handphone */
+        width: 60px; 
     }
 
     .loading-page .loading-bar {
-        width: 80%; /* Lebar loading bar lebih besar di handphone */
+        width: 80%; 
     }
 
     .loading-page .jobdesk {
-        font-size: 14px; /* Ukuran font lebih kecil */
+        font-size: 14px; 
     }
 
     .loading-page .percentage {
-        font-size: 14px; /* Ukuran font lebih kecil */
+        font-size: 14px;
     }
 
     .loading-text {
-        font-size: 14px; /* Ukuran font loading text lebih kecil */
+        font-size: 14px;
     }
     /* End Loading Page*/
 
@@ -469,13 +465,13 @@
 
     .home {
         width: 100%;
-        max-width: 100%; /* Menjaga elemen home agar tidak melebihi lebar layar */
-        flex-direction: column;
+        max-width: 100%; 
+        flex-direction: center column;
     }
 
     .left-section img, #hero-image-hover {
         width: 100%;
-        max-width: 100%; /* Membatasi lebar gambar agar tidak keluar layar */
+        max-width: 100%;
         height: auto;
     }
 
@@ -502,12 +498,12 @@
     /* Navbar */
     .navbar {
         max-width: 100%;
-        padding: 10px; /* Adjust padding */
+        padding: 10px; 
     }
 
     .navbar a {
-        margin: 8px 0; /* Adjust margin for vertical spacing */
-        font-size: 10px; /* Decrease font size */
+        margin: 8px 0; 
+        font-size: 10px;
         padding: 5px;
     }
     /* End Navbar */
@@ -516,7 +512,7 @@
 
     /* Experience */
     .experience h1 {
-        font-size: 28px; /* Adjust header size */
+        font-size: 28px; 
     }
 
     .history {
@@ -525,7 +521,7 @@
     }
 
     .job img {
-        width: 100px; /* Further adjust image size */
+        width: 100px;
         height: 100px;
         padding-left: 20px;
         padding-right: 20px;
@@ -535,7 +531,7 @@
         width: 100%;
     }
     .job .jobdesk h2 {
-        font-size: 18px; /* Further adjust heading size */
+        font-size: 18px;
     }
 
     .jobdesk {
@@ -550,16 +546,16 @@
         margin-right: 120px;
     }
     .job .jobdesk p {
-        font-size: 12px; /* Further adjust paragraph size */
+        font-size: 12px; 
     }
 
     .window {
-        width: 150px; /* Further adjust window size */
+        width: 150px; 
         height: 150px;
     }
 
     .window .period {
-        font-size: 10px; /* Further adjust period size */
+        font-size: 10px;
     }
     /* End Experience */
 
@@ -570,25 +566,25 @@
         max-width: 100%;
     }
     .slider-card {
-        width: 80%; /* Adjust the width of each card */
-        margin: 10px auto; /* Adjust margin for spacing */
-        padding: 8px; /* Reduce padding */
+        width: 80%; 
+        margin: 10px auto; 
+        padding: 8px; 
     }
 
     .project-title {
-        font-size: 18px; /* Further reduce font size */
+        font-size: 18px; 
         margin-left: 15px;
     }
     
     .portfolio h1 {
-        font-size: 24px; /* Further reduce font size */
+        font-size: 24px; 
     }
     .owl-nav .owl-next{
-        right: -20px !important; /* Jarak dari tepi kanan */
+        right: -20px !important; 
     }
     
     .owl-nav .owl-prev {
-        left: -20px !important; /* Jarak dari tepi kiri */
+        left: -20px !important; 
     }
     /* End Portfolio */
 
@@ -599,44 +595,44 @@
         max-width: 100%;
     }
     .education {
-        font-size: 24px; /* Ukuran font yang lebih kecil untuk mobile */
+        font-size: 24px; 
     }
 
     .education h1 {
-        font-size: 28px; /* Ukuran h1 yang lebih kecil */
+        font-size: 28px;
     }
 
     .edu-header {
         margin-top: 50px;
-        font-size: 20px; /* Ukuran header yang lebih kecil */
-        margin-left: 15px; /* Menghapus margin kiri */
+        font-size: 20px; 
+        margin-left: 15px; 
     }
 
     .my-edu {
-        flex-direction: column; /* Ubah menjadi kolom untuk tampilan mobile */
-        padding: 20px; /* Tambahkan padding untuk mobile */
+        flex-direction: column; 
+        padding: 20px; 
     }
 
     .left-edu {
-        width: 100%; /* Ubah lebar menjadi 100% untuk tampilan mobile */
-        margin-right: 0; /* Hapus margin kanan */
-        margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak */
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 
     .right-edu {
-        width: 100%; /* Ubah lebar menjadi 100% untuk tampilan mobile */
+        width: 100%;
     }
 
     .my-name {
-        font-size: 24px; /* Ukuran nama yang lebih kecil */
+        font-size: 24px;
     }
 
     .about-me {
-        font-size: 14px; /* Ukuran teks tentang saya yang lebih kecil */
+        font-size: 14px; 
     }
 
     .loc-date {
-        font-size: 12px; /* Ukuran teks lokasi dan tanggal yang lebih kecil */
+        font-size: 12px;
         margin-bottom: 50px;
     }
 
@@ -654,13 +650,13 @@
     }
 
     .edu-item img {
-        width: 60px; /* Ukuran gambar lebih kecil untuk mobile */
-        height: 60px; /* Ubah tinggi gambar menjadi lebih kecil */
+        width: 60px;
+        height: 60px;
         margin-bottom: 5px;
     }
 
     .edu-item .edu-years {
-        font-size: 9px; /* Ukuran tahun yang lebih kecil */
+        font-size: 9px; 
     }
 
     .edu-item .edu-content {
@@ -690,20 +686,20 @@
     
     /* Skill */
     .skills {
-        grid-template-columns: repeat(3, 1fr); /* Mengatur 4 kolom per baris */
-        column-gap: 20px; /* Mengatur jarak antar kolom */
-        row-gap: 20px; /* Mengatur jarak antar baris */
-        max-width: 90%; /* Membatasi lebar grid agar lebih cocok di layar kecil */
+        grid-template-columns: repeat(3, 1fr); 
+        column-gap: 20px; 
+        row-gap: 20px;
+        max-width: 90%; 
     }
 
     .skill-logo {
-        width: 100px; /* Sesuaikan ukuran card logo agar lebih kecil */
+        width: 100px; 
         height: 100px;
         padding: 5px;
     }
 
     .skill h1 {
-        font-size: 28px; /* Ukuran font skill title lebih kecil di layar 480px */
+        font-size: 28px; 
     }
     /* End Skill */
 
@@ -711,21 +707,21 @@
 
     /* Services */
     .my-services {
-        flex-direction: column; /* Mengubah layout menjadi kolom */
-        align-items: center; /* Memusatkan konten */
-        gap: 15px; /* Jarak antar card */
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
     }
 
     .service-card {
-        width: 95%; /* Mengubah lebar card untuk handphone */
+        width: 95%; 
     }
 
     .services {
-        font-size: 20px; /* Mengurangi ukuran font untuk judul */
+        font-size: 20px; 
     }
 
     .services h1 {
-        font-size: 20px; /* Mengurangi ukuran font untuk judul */
+        font-size: 20px; 
     }
     .service-card {
         margin-top: 50px;
@@ -735,15 +731,15 @@
     }
 
     .service-card h2 {
-        font-size: 18px; /* Mengurangi ukuran font untuk subjudul */
+        font-size: 18px; 
     }
 
     .service-card p {
-        font-size: 12px; /* Mengurangi ukuran font untuk teks */
+        font-size: 12px; 
     }
 
     .service-card .number {
-        font-size: 14px; /* Mengurangi ukuran font untuk nomor */
+        font-size: 14px;
     }
 
     .service-card a {
@@ -755,7 +751,7 @@
 
     /* Contact */
     .contact .talk span {
-        font-size: 150px; /* Ukuran font lebih kecil lagi untuk perangkat yang lebih kecil */
+        font-size: 150px; 
     }
     .social-links {
         max-width: 100%;
@@ -769,7 +765,7 @@
         margin-right: 5px;
     }
     .footer {
-        padding: 10px 0; /* Mengurangi padding footer */
+        padding: 10px 0;
     }
     /* End Contact */
 }
@@ -781,8 +777,8 @@
     }
 
     .navbar a {
-        margin: 8px 0; /* Adjust margin for vertical spacing */
-        font-size: 9px; /* Decrease font size */
+        margin: 8px 0; 
+        font-size: 9px; 
         padding: 5px;
     }
 
@@ -805,7 +801,7 @@
 @media (max-width: 438px) {
     .home {
         width: 100%;
-        max-width: 100%; /* Menjaga elemen home agar tidak melebihi lebar layar */
+        max-width: 100%; 
         flex-direction: column;
     }
 
@@ -825,7 +821,7 @@
 
     .left-section img, #hero-image-hover {
         width: 99%;
-        max-width: 100%; /* Membatasi lebar gambar agar tidak keluar layar */
+        max-width: 100%; 
         height: auto;
     }
 
@@ -851,12 +847,12 @@
     /* Navbar */
     .navbar {
         max-width: 100%;
-        padding: 8px; /* Adjust padding */
+        padding: 8px; 
     }
 
     .navbar a {
-        margin: 8px 0; /* Adjust margin for vertical spacing */
-        font-size: 8px; /* Decrease font size */
+        margin: 8px 0; 
+        font-size: 8px; 
         padding: 5px;
     }
     /* End Navbar */
