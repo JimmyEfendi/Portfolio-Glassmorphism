@@ -1,15 +1,14 @@
 function showLoadingPage() {
     const loadingPage = document.querySelector(".loading-page");
-    loadingPage.style.display = "flex"; // Tampilkan loading page dengan layout flex untuk full layar
+    loadingPage.style.display = "flex";
 
-    // Progres Percentage
     const progress = document.getElementById('progress');
     const percentage = document.getElementById('percentage');
     const mainContent = document.querySelectorAll('.main-content');
 
     let progressValue = 0;
-    const loadingDuration = 3000; // Durasi total loading page dalam milidetik (3 detik)
-    const intervalDuration = loadingDuration / 100; // Setiap step interval untuk mencapai 100% dalam durasi 3 detik
+    const loadingDuration = 3000;
+    const intervalDuration = loadingDuration / 100;
 
     let loadingInterval = setInterval(() => {
         if (progressValue < 100) {
@@ -19,39 +18,33 @@ function showLoadingPage() {
         } else {
             clearInterval(loadingInterval);
 
-            // Animasi slideUp pada loading page
             loadingPage.style.animation = 'slideUp 1s forwards';
 
-            // Setelah slideUp selesai, sembunyikan loading page dan tampilkan halaman home
+            
             setTimeout(() => {
-                loadingPage.style.display = 'none'; // Sembunyikan loading page
+                loadingPage.style.display = 'none';
                 mainContent.forEach(section => {
-                    section.style.display = 'block'; // Tampilkan konten utama
-                    section.style.animation = 'slideUp 1s forwards'; // Animasi slide up untuk konten utama
+                    section.style.display = 'block';
+                    section.style.animation = 'slideUp 1s forwards';
                 });
 
-                // Scroll ke posisi paling atas setelah animasi loading selesai
                 setTimeout(() => {
-                    window.scrollTo(0, 0); // Scroll ke posisi paling atas (top 0, left 0)
-                }, 100); // Tambah sedikit delay untuk sinkronisasi
+                    window.scrollTo(0, 0);
+                }, 100);
 
-            }, 1000); // Durasi animasi slideUp (1 detik)
+            }, 1000);
         }
-    }, intervalDuration); // Set interval berdasarkan durasi total
+    }, intervalDuration);
 }
 
-// Tampilkan animasi loading page saat halaman di-refresh
 window.addEventListener("load", function () {
     showLoadingPage();
 });
-// END LOADING PAGE
 
-// Fungsi Klik Navbar
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();  // Mencegah perilaku default
+        e.preventDefault();
 
-        // Scroll ke bagian yang dituju
         const target = document.querySelector(this.getAttribute('href'));
         window.scrollTo({
             top: target.offsetTop,
@@ -60,37 +53,29 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-    // Ambil semua link navbar
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
     let currentSection = "";
 
-    // Cek setiap section di halaman
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         
-        // Jika posisi scroll berada di dalam section, simpan id-nya
         if (pageYOffset >= sectionTop - sectionHeight / 3) {
             currentSection = section.getAttribute("id");
         }
     });
 
-    // Hapus kelas aktif dari semua link navbar
     navLinks.forEach(link => {
         link.classList.remove("active");
-        // Tambahkan kelas aktif pada link yang sesuai dengan section yang sedang terlihat
         if (link.getAttribute("href").includes(currentSection)) {
             link.classList.add("active");
         }
     });
 });
-//end navbar
 
-//fungsi keybord 1-7
-// Event listener untuk menangkap tombol keyboard
 document.addEventListener('keydown', function(event) {
     switch(event.key) {
         case '1':
@@ -116,9 +101,7 @@ document.addEventListener('keydown', function(event) {
             break;
     }
 });
-//end fungsi 1-7
 
-//Fungsi Dropdown
 function toggleDropdown() {
     var dropdownContent = document.getElementById('dropdown-content');
     if (dropdownContent.style.display === 'block') {
@@ -128,7 +111,6 @@ function toggleDropdown() {
     }
 }
 
-    // Close dropdown when clicking outside
 window.onclick = function(event) {
     if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.fa-chevron-down')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -140,9 +122,7 @@ window.onclick = function(event) {
         }
     }
 }
-// ENd Dropdown
 
-// Fungsi change language
 function changeLanguage(lang) {
     var availableText = document.querySelector('.available-text');
     availableText.classList.add('reanimate'); 
@@ -169,27 +149,24 @@ function changeLanguage(lang) {
         availableText.classList.remove('reanimate'); 
     }, 100);
 }
-//end chage language
 
-//Fungsi Change Hero
 const heroImage = document.getElementById('hero-image');
 const heroImageHover = document.getElementById('hero-image-hover');
 
-    // Fungsi untuk mengganti gambar
 function showHoverImage() {
-    heroImage.style.opacity = '0'; // Sembunyikan gambar pertama
-    heroImageHover.style.opacity = '1'; // Tampilkan gambar kedua
+    heroImage.style.opacity = '0';
+    heroImageHover.style.opacity = '1';
 }
 
 function showNormalImage() {
-    heroImage.style.opacity = '1'; // Tampilkan gambar pertama
-    heroImageHover.style.opacity = '0'; // Sembunyikan gambar kedua
+    heroImage.style.opacity = '1';
+    heroImageHover.style.opacity = '0';
 }
 
-    // Event listener untuk hero image
+
 heroImage.addEventListener('mouseenter', showHoverImage);
 heroImage.addEventListener('mouseleave', showNormalImage);
-//End Change Hero
+
 
 // Owlcarousel
 $(document).ready(function(){
@@ -217,29 +194,25 @@ $(document).ready(function(){
         autoplayHoverPause: true
     });
 
-    // Target iframe yang memuat video
     var iframes = $('iframe');
     
-    // Fungsi untuk menghentikan autoplay
     function stopAutoplay() {
         owl.trigger('stop.owl.autoplay');
     }
 
-    // Fungsi untuk mengaktifkan autoplay
     function startAutoplay() {
         owl.trigger('play.owl.autoplay');
     }
 
-    // Mendengarkan event pada iframe
     $('#video1').on('load', function() {
         const iframe = this;
         const player = new YT.Player(iframe, {
             events: {
                 'onStateChange': function(event) {
                     if (event.data === YT.PlayerState.PLAYING) {
-                        stopAutoplay(); // Hentikan autoplay saat video diputar
+                        stopAutoplay();
                     } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
-                        startAutoplay(); // Mulai ulang autoplay saat video dijeda
+                        startAutoplay();
                     }
                 }
             }
@@ -247,64 +220,51 @@ $(document).ready(function(){
     });
 });
 
-// Memuat API YouTube
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-// end owl carousel
 
-// Fungsi untuk mengarahkan pengguna ke WhatsApp //
 function goToWhatsApp() {
     window.location.href = "https://wa.me/6285271654890";
 }
-//end whatsapp
 
-
-// Event listener untuk play button
 document.querySelectorAll('.play-button').forEach(button => {
     button.addEventListener('click', function () {
         const videoDiv = this.parentElement;
         const videoId = videoDiv.getAttribute('data-id');
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
-        iframe.setAttribute('width', '300');  // Menetapkan lebar iframe
-        iframe.setAttribute('height', '169'); // Menetapkan tinggi iframe
+        iframe.setAttribute('width', '300');
+        iframe.setAttribute('height', '169');
         iframe.setAttribute('frameborder', '0');
         iframe.setAttribute('allowfullscreen', '1');
-        videoDiv.innerHTML = ''; // Menghapus thumbnail dan play button
-        videoDiv.appendChild(iframe); // Menambahkan iframe
+        videoDiv.innerHTML = '';
+        videoDiv.appendChild(iframe);
     });
 });
 
 
-
-//Animasi Intersection Observer API (Skill)
-// Pilih semua elemen dengan class 'skill-logo'
 const skillLogos = document.querySelectorAll('.skill-logo');
 
-// Callback untuk Intersection Observer
 const observerCallback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Tambahkan kelas 'show' saat elemen terlihat di viewport
+            
             entry.target.classList.add('show');
         } else {
-            // Hilangkan kelas 'show' saat elemen keluar dari viewport
+        
             entry.target.classList.remove('show');
         }
     });
 };
 
-// Opsi untuk Intersection Observer
 const observerOptions = {
-    threshold: 0.1 // Elemen akan terlihat jika 10% dari ukurannya masuk ke viewport
+    threshold: 0.1
 };
 
-// Buat instance Intersection Observer
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-// Amati setiap elemen 'skill-logo'
 skillLogos.forEach(skillLogo => {
     observer.observe(skillLogo);
 });
