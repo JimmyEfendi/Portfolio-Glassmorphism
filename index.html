@@ -22,8 +22,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <!-- My Script JS -->
-    <script src="js/script.js" defer></script>
+    <script>
+        window.ChatWidgetConfig = {
+          webhook: {
+            url: 'https://n8n-jimmyefendi.my.id/webhook/bd0964d4-4c3b-45a4-8a28-35854560adfa/chat',
+            route: 'general'
+          },
+          branding: {
+            logo: './assets/img/bot.png',
+            name: 'AI CHATBOT',
+            welcomeText: 'Get instant answers to your questions!',
+            responseTimeText: 'Click the button below to start chatting'
+          },
+          style: {
+            primaryColor: '#10b981',
+            secondaryColor: '#059669',
+            position: 'right',
+            backgroundColor: '#ffffff',
+            fontColor: '#1f2937'
+          },
+          suggestedQuestions: [
+            "Apa yang bisa saya bantu?",
+            "Bagaimana cara menggunakan layanan ini?"
+          ]
+        };
+      </script>
 
 </head>
 <body>
@@ -317,8 +340,8 @@
                         </div>
                         <div class="edu-content">
                             <div class="edu-title">POLITEKNIK NEGERI PADANG</div>
-                            <div class="edu-description">IT Department<br/>Software Engineering</div>
-                            <a class="edu-location">(D4/S1 - Bachelor Applied of Computer)</a>
+                            <div class="edu-description">Information Technology Department<br/>Software Engineering Technology</div>
+                            <a class="edu-location">(D4/S1 - Bachelor of Applied Computer Science)</a>
                         </div>
                         <a class="edu-arrow" href="https://www.pnp.ac.id/"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -330,7 +353,7 @@
                         </div>
                         <div class="edu-content">
                             <div class="edu-title">MAN 1 TANAH DATAR</div>
-                            <div class="edu-description">Department of MNS<br/>Mathematics Natural Sciences</div>
+                            <div class="edu-description">Department of Mathematics and Natural Sciences<br/>Mathematics Natural Sciences</div>
                             <a class="edu-location">(High School)</a>
                         </div>
                         <a class="edu-arrow" href="https://man1tanahdatar.sch.id/"><i class="fas fa-arrow-right"></i></a>
@@ -341,7 +364,7 @@
         </div>
     </section>
     <!-- End Education Section -->
- 
+
     <!-- Skill Section -->
     <section id="skill">
         <div class="skill">
@@ -423,7 +446,7 @@
                 © 2024 Jimmy Efendi. All Rights Reserved.
             </div>
         </div>
-    </section>  
+    </section>
     <!-- End Contact Section -->
 
     <!-- jQuery CDN (Required by Owl Carousel) -->
@@ -431,6 +454,9 @@
   
     <!-- Owl Carousel JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ai-chatbot.js"></script>
+
     
 </body>
 </html>
