@@ -400,7 +400,7 @@ body {
     margin: 40px auto;
     position: sticky;
     top: 20px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .navbar a {
