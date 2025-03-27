@@ -21,17 +21,17 @@ function parseMarkdown(text) {
       const widgetStyles = document.createElement('style');
       widgetStyles.textContent = `
           .chat-assist-widget {
-              --chat-color-primary: var(--chat-widget-primary, #10b981);
-              --chat-color-secondary: var(--chat-widget-secondary, #059669);
-              --chat-color-tertiary: var(--chat-widget-tertiary, #047857);
-              --chat-color-light: var(--chat-widget-light, #d1fae5);
+              --chat-color-primary: var(--chat-widget-primary, #128C7E);
+              --chat-color-secondary: var(--chat-widget-secondary, #075E54);
+              --chat-color-tertiary: var(--chat-widget-tertiary, #128C7E);
+              --chat-color-light: var(--chat-widget-light, #E8E8E8);
               --chat-color-surface: var(--chat-widget-surface, #ffffff);
               --chat-color-text: var(--chat-widget-text, #1f2937);
               --chat-color-text-light: var(--chat-widget-text-light, #6b7280);
               --chat-color-border: var(--chat-widget-border, #e5e7eb);
-              --chat-shadow-sm: 0 1px 3px rgba(16, 185, 129, 0.1);
-              --chat-shadow-md: 0 4px 6px rgba(16, 185, 129, 0.15);
-              --chat-shadow-lg: 0 10px 15px rgba(16, 185, 129, 0.2);
+              --chat-shadow-sm: 0 1px 3px rgba(18, 140, 126, 0.1);
+              --chat-shadow-md: 0 4px 6px rgba(18, 140, 126, 0.15);
+              --chat-shadow-lg: 0 10px 15px rgba(18, 140, 126, 0.2);
               --chat-radius-sm: 8px;
               --chat-radius-md: 12px;
               --chat-radius-lg: 20px;
@@ -77,7 +77,7 @@ function parseMarkdown(text) {
               display: flex;
               align-items: center;
               gap: 12px;
-              background: linear-gradient(135deg, var(--chat-color-primary) 0%, var(--chat-color-secondary) 100%);
+              background: var(--chat-color-primary);
               color: white;
               position: relative;
           }
@@ -87,8 +87,8 @@ function parseMarkdown(text) {
               height: 32px;
               border-radius: var(--chat-radius-sm);
               object-fit: contain;
-              background: white;
-              padding: 4px;
+              background: transparent;
+              padding: 0;
           }
   
           .chat-assist-widget .chat-header-title {
@@ -186,7 +186,8 @@ function parseMarkdown(text) {
               flex: 1;
               overflow-y: auto;
               padding: 20px;
-              background: #f9fafb;
+              padding-bottom: 40px;
+              background: #E5DDD5;
               display: flex;
               flex-direction: column;
               gap: 12px;
@@ -201,7 +202,7 @@ function parseMarkdown(text) {
           }
   
           .chat-assist-widget .chat-messages::-webkit-scrollbar-thumb {
-              background-color: rgba(16, 185, 129, 0.3);
+              background-color: rgba(18, 140, 126, 0.3);
               border-radius: var(--chat-radius-full);
           }
   
@@ -217,7 +218,7 @@ function parseMarkdown(text) {
           }
   
           .chat-assist-widget .chat-bubble.user-bubble {
-              background: linear-gradient(135deg, var(--chat-color-primary) 0%, var(--chat-color-secondary) 100%);
+              background: var(--chat-color-primary);
               color: white;
               align-self: flex-end;
               border-bottom-right-radius: 4px;
@@ -225,12 +226,11 @@ function parseMarkdown(text) {
           }
   
           .chat-assist-widget .chat-bubble.bot-bubble {
-              background: white;
+              background: var(--chat-color-light);
               color: var(--chat-color-text);
               align-self: flex-start;
               border-bottom-left-radius: 4px;
               box-shadow: var(--chat-shadow-sm);
-              border: 1px solid var(--chat-color-light);
           }
   
           .chat-assist-widget .typing-indicator {
@@ -279,32 +279,39 @@ function parseMarkdown(text) {
   
           .chat-assist-widget .chat-controls {
               padding: 16px;
-              background: var(--chat-color-surface);
+              background: #f0f0f0;
               border-top: 1px solid var(--chat-color-light);
               display: flex;
               gap: 10px;
+              position: sticky;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: 10;
           }
   
           .chat-assist-widget .chat-textarea {
               flex: 1;
-              padding: 14px 16px;
+              padding: 0 16px;
               border: 1px solid var(--chat-color-light);
               border-radius: var(--chat-radius-md);
-              background: var(--chat-color-surface);
+              background: white;
               color: var(--chat-color-text);
               resize: none;
               font-family: inherit;
               font-size: 14px;
-              line-height: 1.5;
+              line-height: 48px;
               max-height: 120px;
               min-height: 48px;
+              height: 48px;
               transition: var(--chat-transition);
+              position: relative;
           }
   
           .chat-assist-widget .chat-textarea:focus {
               outline: none;
               border-color: var(--chat-color-primary);
-              box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+              box-shadow: 0 0 0 3px rgba(18, 140, 126, 0.2);
           }
   
           .chat-assist-widget .chat-textarea::placeholder {
@@ -312,7 +319,7 @@ function parseMarkdown(text) {
           }
   
           .chat-assist-widget .chat-submit {
-              background: linear-gradient(135deg, var(--chat-color-primary) 0%, var(--chat-color-secondary) 100%);
+              background: var(--chat-color-primary);
               color: white;
               border: none;
               border-radius: var(--chat-radius-md);
@@ -325,6 +332,7 @@ function parseMarkdown(text) {
               justify-content: center;
               flex-shrink: 0;
               box-shadow: var(--chat-shadow-sm);
+              position: relative;
           }
   
           .chat-assist-widget .chat-submit:hover {
@@ -342,7 +350,7 @@ function parseMarkdown(text) {
               bottom: 20px;
               height: 56px;
               border-radius: var(--chat-radius-full);
-              background: linear-gradient(135deg, var(--chat-color-primary) 0%, var(--chat-color-secondary) 100%);
+              background: var(--chat-color-primary);
               color: white;
               border: none;
               cursor: pointer;
@@ -495,7 +503,7 @@ function parseMarkdown(text) {
           .chat-assist-widget .form-input:focus {
               outline: none;
               border-color: var(--chat-color-primary);
-              box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+              box-shadow: 0 0 0 3px rgba(18, 140, 126, 0.2);
           }
   
           .chat-assist-widget .form-input.error {
@@ -556,8 +564,8 @@ function parseMarkdown(text) {
               }
           },
           style: {
-              primaryColor: '#10b981',
-              secondaryColor: '#059669',
+              primaryColor: '#128C7E',
+              secondaryColor: '#075E54',
               position: 'right',
               backgroundColor: '#ffffff',
               fontColor: '#1f2937'
@@ -573,8 +581,8 @@ function parseMarkdown(text) {
               style: { 
                   ...defaultSettings.style, 
                   ...window.ChatWidgetConfig.style,
-                  primaryColor: window.ChatWidgetConfig.style?.primaryColor === '#854fff' ? '#10b981' : (window.ChatWidgetConfig.style?.primaryColor || '#10b981'),
-                  secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#6b3fd4' ? '#059669' : (window.ChatWidgetConfig.style?.secondaryColor || '#059669')
+                  primaryColor: window.ChatWidgetConfig.style?.primaryColor === '#854fff' ? '#128C7E' : (window.ChatWidgetConfig.style?.primaryColor || '#128C7E'),
+                  secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#6b3fd4' ? '#075E54' : (window.ChatWidgetConfig.style?.secondaryColor || '#075E54')
               },
               suggestedQuestions: window.ChatWidgetConfig.suggestedQuestions || defaultSettings.suggestedQuestions
           } : defaultSettings;
@@ -661,7 +669,7 @@ function parseMarkdown(text) {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
           </svg>
-          <span class="chat-launcher-text">AI Assistent</span>`;
+          <span class="chat-launcher-text">Need help?</span>`;
       
       // Add elements to DOM
       widgetRoot.appendChild(chatWindow);
@@ -712,7 +720,14 @@ function parseMarkdown(text) {
       // Show registration form
       function showRegistrationForm() {
           chatWelcome.style.display = 'none';
-          userRegistration.classList.add('active');
+          chatBody.classList.add('active');
+          conversationId = createSessionId();
+          
+          const botMessage = document.createElement('div');
+          botMessage.className = 'chat-bubble bot-bubble';
+          botMessage.textContent = "Halo... Dengan saya Jimmy AI Agent. Ada yang bisa saya bantu?";
+          messagesContainer.appendChild(botMessage);
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
       }
   
       // Validate email format
